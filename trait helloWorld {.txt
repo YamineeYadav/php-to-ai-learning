@@ -1,0 +1,19 @@
+trait helloWorld {
+public function hello(){
+      echo "hello World!";
+}
+   
+}
+
+class A{
+    use helloWorld;
+}
+
+class B{
+    use helloWorld;
+}
+
+$objA=new A();
+$objA->hello();
+$objB=new B();
+$objB->hello();
