@@ -1,7 +1,10 @@
 import openai
 
 # Initialize OpenAI API key
-openai.api_key = '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'
+from dotenv import load_dotenv
+load_dotenv()
+openai.api_key = os.getenv("OPENAI_API_KEY")
+
 
 # Function to get a response from GPT-3
 def get_response(prompt):
