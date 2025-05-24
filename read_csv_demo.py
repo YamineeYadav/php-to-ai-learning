@@ -15,6 +15,6 @@ print("\nColumn names:", df.columns.tolist())
 
 # Filter: show records where 'status' is 'Pending' (if such column exists)
 if 'status' in df.columns:
-    completed = df[df['status'] == 'Completed']
-    print("\nCompleted rows:")
-    print(completed)
+    pending = df[df['status'] == 'Pending']
+    print("\nPending rows:")
+    print(pending)
